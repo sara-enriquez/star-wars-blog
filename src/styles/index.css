@@ -1,3 +1,126 @@
-/* 
-    General Styles
-*/
+.navbar {
+  background-image: linear-gradient(
+    to left top,
+    #0d0d0d,
+    #161121,
+    #201331,
+    #2f1040,
+    #42054c
+  );
+  padding: 10px;
+}
+
+.logo {
+  width: 120px;
+  height: 70px;
+}
+
+.favs {
+    font-family: 'Russo One', sans-serif;
+}
+
+.favs-check:focus+.favs, .favs:focus {
+    border-color: white;
+    outline: 0;
+    box-shadow: 0 ;
+}
+.text-danger {
+    --bs-text-opacity: 1;
+    color: none;
+}
+
+.home {
+  background-image: linear-gradient(
+    to right top,
+    #0d0d0d,
+    #161121,
+    #201331,
+    #2f1040,
+    #42054c
+  );
+  color: white;
+  font-family: 'Russo One', sans-serif;
+}
+
+.headers {
+  padding: 25px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.card-group {
+  justify-content: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+  overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fdfcfc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #201331;
+}
+
+.card-group > .card {
+  flex: 0 0 20%;
+  margin: 5px;
+}
+
+.card {
+  background-image: linear-gradient(
+    to right top,
+    #0d0d0d,
+    #161121,
+    #201331,
+    #2f1040,
+    #42054c
+  );
+}
+
+#img-card {
+  height: 200px;
+}
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: #42054c;
+  color: white;
+  font-weight: lighter;
+}
+
+.btn:hover {
+  background-color: #2f1040;
+  color: white;
+  border-color: white;
+}
+
+.btn:active{
+    border-color: white;
+    outline: none;
+}
+
+.footer {
+  background-image: linear-gradient(
+    to right top,
+    #0d0d0d,
+    #161121,
+    #201331,
+    #2f1040,
+    #42054c
+  );
+  color: white;
+}

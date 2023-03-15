@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
+		<nav className="navbar navbar-light bg-light">
 			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+				<img className="logo" src="https://1000marcas.net/wp-content/uploads/2019/12/Star-Wars-Logo-5.png"/>
 			</Link>
 			<div className="ml-auto">
 				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
+					<button className="btn favs">Favs <i className="fa fa-heart text-danger" /></button>
 				</Link>
 			</div>
 		</nav>
