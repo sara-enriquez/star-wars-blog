@@ -2,22 +2,32 @@ import React, { useEffect, useState } from "react";
 import Card from "./card.jsx";
 
 const CarouselPeople = () => {
-  const [people, setPeolpe] = useState ([]);
-  useEffect (()=>{
-      fetch("https://www.swapi.tech/api/people")
-      .then(resp => resp.json())
-      .then(data => setPeolpe(data.results) )
-      .catch(err => console.log(err))
-  },[])
- 
+  const [people, setPeolpe] = useState([]);
+  useEffect(() => {
+    fetch("https://www.swapi.tech/api/people?page=1&limit=40")
+      .then((resp) => resp.json())
+      .then((data) => setPeolpe(data.results))
+      .catch((err) => console.log(err));
+  }, []);
+ console.log(people)
   return (
     <div className="container">
       <div className="card-group carousel">
-        {people.map((character, i) => {
-          return <Card name = {character.name} image = {"https://e7.pngegg.com/pngimages/281/633/png-clipart-star-wars-darth-vader-art-anakin-skywalker-star-wars-masters-of-teras-kasi-obi-wan-kenobi-palpatine-dark-lord-the-rise-of-darth-vader-darth-vader-fictional-character-film.png"}/>
-        })}
-        </div>
+        { people.length==40 ? people.map((character, i) => {
+          return (
+            <Card
+              name={character.name}
+              image={
+                `https://starwars-visualguide.com/assets/img/characters/${character.uid}.jpg`
+              }
+              type={"people"}
+              id={character.uid}
+            />
+          )
+        }):<p>Loading ...</p>
+        }
       </div>
+    </div>
   );
 };
 
