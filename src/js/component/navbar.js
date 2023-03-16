@@ -9,7 +9,7 @@ export const Navbar = () => {
       <Link to="/">
         <img
           className="logo"
-          src="https://1000marcas.net/wp-content/uploads/2019/12/Star-Wars-Logo-5.png"
+          src="https://1000marcas.net/wp-content/uploads/2019/12/Star-Wars-emblema.jpg"
         />
       </Link>
       <div className="ml-auto">
