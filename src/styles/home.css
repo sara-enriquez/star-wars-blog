@@ -11,6 +11,16 @@
   padding: 15px;
 }
 
+.btn-logo{
+  background-color: #0a0a0a;
+}
+
+.btn-logo:hover{
+  border-color: white;
+  outline: none;
+  box-shadow: none;
+}
+
 .logo {
   width: 120px;
   height: 70px;

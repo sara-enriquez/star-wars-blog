@@ -7,10 +7,12 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-light bg-light">
       <Link to="/">
+        <button className="btn-logo">
         <img
           className="logo"
           src="https://1000marcas.net/wp-content/uploads/2019/12/Star-Wars-emblema.jpg"
         />
+        </button>
       </Link>
       <div className="ml-auto">
         <Link to="*">
