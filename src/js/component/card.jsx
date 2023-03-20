@@ -13,7 +13,11 @@ const Card = (props) => {
           <Link to = {`/${props.type}/${props.id}`}>
             <button className="btn">Learn more</button>
           </Link>
-            <button className="btn" onClick={() => {actions.addFavorites(props.name)}}>
+            <button className="btn" onClick={() => {
+              
+              actions.addFavorites(props.name)
+              console.log(store.favorites)
+              }}>
               <i className="fa-solid fa-heart" ></i>
             </button>
         </div>

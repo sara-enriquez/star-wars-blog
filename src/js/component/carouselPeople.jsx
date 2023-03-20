@@ -9,11 +9,10 @@ const CarouselPeople = () => {
       .then((data) => setPeolpe(data.results))
       .catch((err) => console.log(err));
   }, []);
- console.log(people)
   return (
     <div className="container">
       <div className="card-group carousel">
-        { people.length==40 ? people.map((character, i) => {
+        { people.length==40 ? people.map((character) => {
           return (
             <Card
               name={character.name}

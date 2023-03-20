@@ -1,4 +1,3 @@
-
 .navbar {
   background-image: linear-gradient(
     to left top,
@@ -9,13 +8,14 @@
     #42054c
   );
   padding: 15px;
+  display: flex;
 }
 
-.btn-logo{
+.btn-logo {
   background-color: black;
 }
 
-.btn-logo:hover{
+.btn-logo:hover {
   border-color: white;
   outline: none;
   box-shadow: none;
@@ -35,6 +35,13 @@
   border-color: white;
   outline: none;
   box-shadow: none;
+}
+
+
+
+.image{
+  width: 350px;
+  height: 400px;
 }
 
 .home {
@@ -139,6 +146,7 @@
   justify-content: center;
 }
 
-.footer.text{
+.footer.text {
   display: flex;
 }
+

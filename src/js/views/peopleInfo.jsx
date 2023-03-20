@@ -16,7 +16,7 @@ const [character, setCharacter] = useState({})
     <div className="container">
         <div className="row">
             <div className="col-md-6">
-                <img src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-gray-solid-color-simple-background-image_557028.jpg"></img>
+                <img className="image" src={`https://starwars-visualguide.com/assets/img/characters/${params.idPeople}.jpg`} />
             </div>
             <div className="col-md-6">
                 <h2>{character.properties?.name}</h2>
