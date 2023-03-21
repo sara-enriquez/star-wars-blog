@@ -26,20 +26,24 @@ export const Navbar = () => {
                 >
                   Favs <i className="fa fa-heart" />
                 </button>
-                <ul class="dropdown-menu dropdown-menu-left">
-                  {store.favorites.map((favorite) => (
-                    <li className="favorite">
-                      {favorite}
-                      <button
-                        onClick={() => {
-                          actions.removeFavorites(favorite);
-                          console.log(store.favorites);
-                        }}
-                      >
-                        <i className="fa-regular fa-trash-can"></i>
-                      </button>
-                    </li>
-                  ))}
+                <ul class="dropdown-menu dropdown-menu-end">
+                  {store.favorites.length == 0 ? (
+                    <li className="no-favs">No Favs</li>
+                  ) : (
+                    store.favorites.map((favorite) => (
+                      <li className="favorite">
+                        {favorite}
+                        <button className="btn remove-favorite-btn"
+                          onClick={() => {
+                            actions.removeFavorites(favorite);
+                            console.log(store.favorites);
+                          }}
+                        >
+                          <i className="fa-regular fa-trash-can"></i>
+                        </button>
+                      </li>
+                    ))
+                  )}
                 </ul>
               </li>
             </ul>

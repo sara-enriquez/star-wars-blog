@@ -37,7 +37,21 @@
   box-shadow: none;
 }
 
+.no-favs{
+  text-align: center;
+}
 
+.favorite{
+  text-align: center;
+  margin-top: 10px ;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.remove-favorite-btn{
+  float: right;
+  margin-right: 10px;
+}
 
 .image{
   width: 350px;

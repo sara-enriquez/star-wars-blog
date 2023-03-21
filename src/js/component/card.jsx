@@ -15,7 +15,7 @@ const Card = (props) => {
           </Link>
             <button className="btn" onClick={() => {
               
-              actions.addFavorites(props.name)
+              store.favorites.includes(props.name) ? null : actions.addFavorites(props.name)
               console.log(store.favorites)
               }}>
               <i className="fa-solid fa-heart" ></i>
