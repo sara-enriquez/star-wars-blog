@@ -1,3 +1,4 @@
+
 .navbar {
   background-image: linear-gradient(
     to left top,
@@ -160,7 +161,7 @@
   justify-content: center;
 }
 
-.footer.text {
-  display: flex;
+.footer-text {
+  margin-top: 1em;
 }
 

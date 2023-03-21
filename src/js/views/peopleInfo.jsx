@@ -15,15 +15,15 @@ const [character, setCharacter] = useState({})
  return (
     <div className="container">
         <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 mt-3">
                 <img className="image" src={`https://starwars-visualguide.com/assets/img/characters/${params.idPeople}.jpg`} />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mt-3">
                 <h2>{character.properties?.name}</h2>
                 <p>{character.description}</p>
             </div>
         </div>
-        <div className="row text-center">
+        <div className="row text-center mt-3 d-flex justify-content-center">
             <div className="col-md-2"><h5>Birth Year</h5><p>{character.properties?.birth_year}</p></div>
             <div className="col-md-2"><h5>Gender</h5><p>{character.properties?.gender}</p></div>
             <div className="col-md-2"><h5>Height</h5><p>{character.properties?.height}</p></div>
